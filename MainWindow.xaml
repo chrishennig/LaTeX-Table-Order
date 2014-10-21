@@ -1,0 +1,31 @@
+﻿<Window x:Name="mainWindow" x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Latex Table" Height="403" Width="610" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="btn_edit" Content="edit" Margin="459,312,10,0" Height="20" VerticalAlignment="Top" IsEnabled="False" Click="btn_edit_Click"/>
+        <CheckBox x:Name="cb_cullom_I_with" Content="" HorizontalAlignment="Left" Margin="9,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.95,-1" Click="cb_cullom_I_with_Click"/>
+        <TextBox x:Name="tb_cullom_I_with" HorizontalAlignment="Left" Height="23" Margin="25,41,0,0" TextWrapping="Wrap" Text="Spalte I Breite" VerticalAlignment="Top" Width="80" IsEnabled="False" TextChanged="tb_cullom_I_with_TextChanged" GotFocus="tb_cullom_I_with_GotFocus" LostFocus="tb_cullom_I_with_LostFocus"/>
+        <Button x:Name="btn_open" Content="Öffne Datei" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btn_open_Click"/>
+        <Label x:Name="lbl_path_curr_data" Content="Pfad zur aktuellen Datei" HorizontalAlignment="Left" Margin="90,7,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_praefix" Content="" HorizontalAlignment="Left" Margin="105,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.225,0.533" Click="cb_praefix_Click"/>
+        <TextBox x:Name="tb_praefix" HorizontalAlignment="Left" Height="23" Margin="120,41,0,0" TextWrapping="Wrap" Text="[]" VerticalAlignment="Top" Width="21" IsEnabled="False"/>
+        <CheckBox x:Name="cb_cullom_II_with" Content="" HorizontalAlignment="Left" Margin="324,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.225,0.533" Click="cb_cullom_II_with_Click"/>
+        <TextBox x:Name="tb_cullom_II_with" HorizontalAlignment="Left" Height="23" Margin="340,40,0,0" TextWrapping="Wrap" Text="Spalte II Breite" VerticalAlignment="Top" Width="86" IsEnabled="False" TextChanged="tb_cullom_II_with_TextChanged" GotFocus="tb_cullom_II_with_GotFocus" LostFocus="tb_cullom_II_with_LostFocus"/>
+        <ListBox x:Name="lb_list_view" Margin="10,69,10,0" Height="235" VerticalAlignment="Top" SelectionChanged="lb_list_view_SelectionChanged"/>
+        <CheckBox x:Name="cb_edit" Content="" Margin="9,313,0,0" Height="15" VerticalAlignment="Top" HorizontalAlignment="Left" Width="15" Click="cb_edit_Click"/>
+        <TextBox x:Name="tb_edit_cullom_I" HorizontalAlignment="Left" Height="23" Margin="72,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" IsEnabled="False"/>
+        <TextBox x:Name="tb_edit_cullom_II" HorizontalAlignment="Left" Height="23" Margin="264,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" IsEnabled="False"/>
+        <Button x:Name="btn_submit" Content="submit" Margin="459,337,10,0" Height="20" VerticalAlignment="Top" IsEnabled="False" Click="btn_submit_Click"/>
+        <TextBox x:Name="tb_cullom_I_submit" HorizontalAlignment="Left" Height="23" Margin="72,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextChanged="tb_cullom_I_submit_TextChanged"/>
+        <TextBox x:Name="tb_cullom_II_submit" HorizontalAlignment="Left" Height="23" Margin="264,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="tb_edit_number" Margin="29,309,0,0" TextWrapping="Wrap" RenderTransformOrigin="0.317,-1.087" HorizontalAlignment="Left" Width="37" Height="23" VerticalAlignment="Top" IsEnabled="False" TextChanged="tb_edit_number_TextChanged"/>
+        <RadioButton x:Name="rb_II_left" Content="links" HorizontalAlignment="Left" Margin="431,44,0,0" VerticalAlignment="Top" IsEnabled="False" Click="rb_II_left_Click" GroupName="II" IsChecked="True"/>
+        <RadioButton x:Name="rb_II_right" Content="rechts" HorizontalAlignment="Left" Margin="479,44,0,0" VerticalAlignment="Top" IsEnabled="False" Click="rb_II_right_Click" GroupName="II"/>
+        <RadioButton x:Name="rb_II_center" Content="zentriet" HorizontalAlignment="Left" Margin="535,45,0,0" VerticalAlignment="Top" IsEnabled="False" Click="rb_II_center_Click" GroupName="II"/>
+        <RadioButton x:Name="rb_I_left" Content="links" HorizontalAlignment="Left" Margin="142,45,0,0" VerticalAlignment="Top" IsEnabled="False" Click="rb_I_left_Click" GroupName="I"/>
+        <RadioButton x:Name="rb_I_right" Content="rechts" HorizontalAlignment="Left" Margin="190,45,0,0" VerticalAlignment="Top" IsEnabled="False" Click="rb_I_right_Click" GroupName="I"/>
+        <RadioButton x:Name="rb_I_center" Content="zentriet" HorizontalAlignment="Left" Margin="246,46,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="True" Click="rb_I_center_Click" IsThreeState="True" GroupName="I"/>
+
+    </Grid>
+</Window>
